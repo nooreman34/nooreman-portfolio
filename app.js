@@ -11,7 +11,7 @@ const PROJECTS_DATA = {
     role: "Graphic Design, Branding, Visual Design, Website Graphics",
     tools: ["Photoshop", "Illustrator", "Canva", "AI Tools", "Web Design Tools"],
     description: "Premium jewelry campaign visuals, brand storytelling graphics, and luxury social media designs. This campaign visualizes timeless elegance, matching high-end jewelry with dark cinematic luxury accents.",
-    thumbnail: "thumbnails/exazar.jpg",
+    thumbnail: "exazar-thumbnail.png",
     images: [
       "project-images/exazar/Beyond ordinary.png",
       "project-images/exazar/A Legacy Reawaken.png",
@@ -27,7 +27,7 @@ const PROJECTS_DATA = {
     role: "Graphic Design, Branding, Visual Design, Website Graphics",
     tools: ["Photoshop", "Illustrator", "Canva", "AI Tools", "Web Design Tools"],
     description: "Blood donation and emergency response awareness visuals with clean healthcare-focused design. Emphasizes modern clean layouts, typography, and high impact call-to-actions targeting younger donors.",
-    thumbnail: "thumbnails/nabz.jpg",
+    thumbnail: "nabz-thumbnail.png",
     images: [
       "project-images/nabz/post 1.png",
       "project-images/nabz/post 2.png",
@@ -43,7 +43,7 @@ const PROJECTS_DATA = {
     role: "Graphic Design, Branding, Visual Design, Website Graphics",
     tools: ["Photoshop", "Illustrator", "Canva", "AI Tools", "Web Design Tools"],
     description: "Solar inverter and energy solution campaign visuals with clean technology branding. Uses bold green, yellow, and deep navy tones to signify renewable energy, efficiency, and residential cost-savings.",
-    thumbnail: "thumbnails/energiko.jpg",
+    thumbnail: "energiko-thumbnail.png",
     images: [
       "project-images/energiko/post 10.png",
       "project-images/energiko/post 2.png",
@@ -60,7 +60,7 @@ const PROJECTS_DATA = {
     role: "Graphic Design, Branding, Visual Design, Website Graphics",
     tools: ["Photoshop", "Illustrator", "Canva", "AI Tools", "Web Design Tools"],
     description: "Professional legal service graphics, corporate visual identity, and premium social media designs. This visual identity creates trust, authority, and professionalism through elegant layouts, serif font pairing, and deep blue/gold colors.",
-    thumbnail: "thumbnails/maria-legal.jpg",
+    thumbnail: "maria-legal-thumbnail.png",
     images: [
       "project-images/maria-legal/maria post 1 insta-13.jpg",
       "project-images/maria-legal/maria-post-10-insta.jpg",
@@ -77,7 +77,7 @@ const PROJECTS_DATA = {
     role: "Graphic Design, Branding, Visual Design, Website Graphics",
     tools: ["Photoshop", "Illustrator", "Canva", "AI Tools", "Web Design Tools"],
     description: "Beauty and skincare product visuals designed with soft premium product-focused branding. Highlights clean backgrounds, minimalist grids, and glassmorphic card overlays mimicking clinical purity.",
-    thumbnail: "thumbnails/ournex.jpg",
+    thumbnail: "Orunex thumbnail.png",
     images: [
       "project-images/ournex/post 11.png",
       "project-images/ournex/post 14.png",
@@ -94,7 +94,7 @@ const PROJECTS_DATA = {
     role: "Graphic Design, Branding, Visual Design, Website Graphics",
     tools: ["Photoshop", "Illustrator", "Canva", "AI Tools", "Web Design Tools"],
     description: "Real estate, resort, expo, and tourism promotional visuals with strong campaign presentation. Showcases high-contrast layouts, structural alignments, and rich content displays designed to generate leads.",
-    thumbnail: "thumbnails/wirasat.jpg",
+    thumbnail: "wirasat thumbnail.png",
     images: [
       "project-images/wirasat/WIRASAT sialkot event post 1.jpg",
       "project-images/wirasat/wirasat post 3.jpg",
@@ -115,7 +115,7 @@ const PROJECTS_DATA = {
     role: "Graphic Design, Branding, Visual Design, Website Graphics",
     tools: ["Photoshop", "Illustrator", "Canva", "AI Tools", "Web Design Tools"],
     description: "Company profile, service presentation, and professional cleaning brand visual design. Visual layout emphasizes freshness, reliability, and structured corporate clarity with a beautiful presentation slide deck.",
-    thumbnail: "thumbnails/zerodust.jpg",
+    thumbnail: "zerodust thumbnail.png",
     images: [
       "project-images/zerodust/company profile-01.jpg",
       "project-images/zerodust/company profile-02.jpg",
