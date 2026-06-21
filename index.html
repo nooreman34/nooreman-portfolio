@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Noor Eman - Portfolio of a professional Graphic Designer & Creative Web Visual Specialist. Presenting premium brand visuals, website graphics, packaging, and digital creatives.">
+  <meta name="keywords" content="Graphic Design, Branding, Web Visuals, Packaging Design, Social Media Graphics, Noor Eman, Portfolio">
+  <meta name="author" content="Noor Eman">
+  
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:title" content="Noor Eman | Graphic Designer & Creative Web Visual Specialist">
+  <meta property="og:description" content="Cinematic branding, luxury web graphics, and professional digital campaigns by Noor Eman.">
+  <meta property="og:image" content="hero/hero-poster.png">
+  <meta property="og:type" content="website">
+  
+  <title>Noor Eman | Graphic Designer & Creative Web Visual Specialist</title>
+  
+  <!-- Tailwind is avoided per development rules, vanilla css is linked -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+   <!-- Custom Glow Cursor elements -->
+   <div class="custom-cursor"></div>
+   <div class="custom-cursor-glow"></div>
+ 
+   <!-- Background Ambient Lights -->
+   <div class="glow-spot glow-spot-1"></div>
+   <div class="glow-spot glow-spot-2"></div>
+   <div class="glow-spot glow-spot-3"></div>
+   <div class="glow-spot glow-spot-4"></div>
+ 
+   <!-- Header Navigation -->
+   <header>
+     <div class="container">
+       <a href="#home" class="logo hoverable"><span></span></a>
+       <button class="mobile-nav-toggle hoverable" aria-label="Toggle Navigation">
+         <span></span>
+         <span></span>
+         <span></span>
+       </button>
+       <ul class="nav-links">
+         <li><a href="#home" class="hoverable active">Home</a></li>
+         <li><a href="#about" class="hoverable">About</a></li>
+         <li><a href="#skills" class="hoverable">Skills</a></li>
+         <li><a href="#services" class="hoverable">Services</a></li>
+         <li><a href="#projects" class="hoverable">Projects</a></li>
+         <li><a href="#contact" class="hoverable">Contact</a></li>
+       </ul>
+     </div>
+   </header>
+ 
+     <!-- Hero Section -->
+     <section id="home" class="hero">
+       <div class="hero-video-bg">
+         <video
+           id="heroVideo"
+           class="hero-video"
+           playsinline
+           autoplay
+           loop
+           preload="metadata"
+           poster="./hero/hero-poster.png"
+         >
+           <source src="./hero/hero-video.mp4" type="video/mp4">
+         </video>
+       </div>
+       <div class="hero-overlay"></div>
+       
+       <!-- Floating 3D elements for Hero -->
+       <img src="./3d-elements/glass-cube.png" alt="3D Glass Cube" class="floating-3d large floating-hero-left">
+       <img src="./3d-elements/glass-bolt.png" alt="3D Glass Bolt" class="floating-3d medium floating-hero-right">
+
+       <!-- Enable Sound Button -->
+       <button id="enable-sound-btn" class="btn-enable-sound hoverable" aria-label="Enable sound for hero video">
+         <svg class="sound-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+           <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+           <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+         </svg>
+         Enable Sound
+       </button>
+       
+       <div class="container">
+        <div class="hero-content reveal">
+          <div class="hero-tag">Creative Web Visual Specialist</div>
+          <h1 class="hero-title">
+            <span class="hero-title-name">NOOR EMAN</span>
+            <span class="hero-title-role text-gradient">GRAPHIC DESIGNER</span>
+          </h1>
+          <p class="hero-tagline">
+            Creating modern brand visuals, website graphics, packaging designs, and digital creatives that help brands look professional, polished, and memorable.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary hoverable">
+              View Projects
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary hoverable">
+              Contact Me
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- About Section -->
+    <section id="about" class="about">
+      <!-- Floating 3D elements from assets folder -->
+      <img src="./3d-elements/glass-ring.png" alt="3D Glass Ring" class="floating-3d medium floating-about-left">
+      <img src="./3d-elements/glass-cube.png" alt="3D Glass Cube" class="floating-3d large floating-about-right">
+      
+      <div class="about-container reveal">
+        <!-- Left column: Avatar card -->
+        <div class="about-media-wrapper">
+          <div class="about-image-card hoverable">
+            <img src="./hero/hero-poster.png" alt="Noor Eman Creative Specialist AI Avatar" class="about-avatar-img">
+            <div class="about-glow-effect"></div>
+          </div>
+        </div>
+        
+        <!-- Right column: Text content -->
+        <div class="about-content-wrapper">
+          <span class="section-subtitle">ABOUT ME</span>
+          <h2 class="about-title-large">A Vision-Driven <span class="text-gradient">Creator</span></h2>
+          <p class="about-paragraph">
+            I’m Noor Eman, a creative graphic designer focused on brand visuals, website graphics, packaging designs, printing materials, and digital content that help businesses look polished and professional. I combine design sense, modern visuals, and AI-assisted creative workflows to build clean, attractive, and high-impact visuals for brands across different industries.
+          </p>
+          
+          <!-- 3 small glass cards below paragraph -->
+          <div class="about-cards-grid">
+            <div class="about-sub-card glass-card hoverable">
+              <h4 class="about-sub-card-title">Design Focus</h4>
+              <p class="about-sub-card-text">Brand visuals, website graphics, packaging, and polished digital creatives.</p>
+            </div>
+            <div class="about-sub-card glass-card hoverable">
+              <h4 class="about-sub-card-title">Creative Direction</h4>
+              <p class="about-sub-card-text">Modern layouts, premium visuals, AI-assisted concepts, and consistent brand presentation.</p>
+            </div>
+            <div class="about-sub-card glass-card hoverable">
+              <h4 class="about-sub-card-title">Design Philosophy</h4>
+              <p class="about-sub-card-text">Creative visuals built to make brands look polished, memorable, and professionally presented across digital and print platforms.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+   <!-- Skills Section -->
+   <section id="skills" class="skills">
+     <!-- Floating 3D elements from assets folder -->
+     <img src="./3d-elements/glass-bolt.png" alt="3D Glass Bolt" class="floating-3d medium floating-skills-left">
+     <img src="./3d-elements/glass-ring.png" alt="3D Glass Ring" class="floating-3d small floating-skills-right">
+     
+     <div class="container">
+       <div class="section-header reveal">
+         <span class="section-subtitle">Expertise</span>
+         <h2 class="section-title text-gradient">Core Skills</h2>
+         <p class="section-desc">A diverse toolkit tailored for branding systems, digital web designs, and tangible product visuals.</p>
+       </div>
+       
+       <div class="skills-grid reveal delay-100">
+         <!-- Skill 1 -->
+         <div class="skill-card hoverable">
+           <div class="skill-icon-wrapper">
+             <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+               <path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+             </svg>
+           </div>
+           <div class="skill-name">Graphic Designing</div>
+         </div>
+         
+         <!-- Skill 2 -->
+         <div class="skill-card hoverable">
+           <div class="skill-icon-wrapper">
+             <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+               <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+             </svg>
+           </div>
+           <div class="skill-name">Branding</div>
+         </div>
+         
+         <!-- Skill 3 -->
+         <div class="skill-card hoverable">
+           <div class="skill-icon-wrapper">
+             <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+               <polyline points="16 18 22 12 16 6"/>
+               <polyline points="8 6 2 12 8 18"/>
+             </svg>
+           </div>
+           <div class="skill-name">Website Development</div>
+         </div>
+         
+         <!-- Skill 4 -->
+         <div class="skill-card hoverable">
+           <div class="skill-icon-wrapper">
+             <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+               <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+               <circle cx="8.5" cy="8.5" r="1.5"/>
+               <polyline points="21 15 16 10 5 21"/>
+             </svg>
+           </div>
+           <div class="skill-name">Website Graphics</div>
+         </div>
+         
+         <!-- Skill 5 -->
+         <div class="skill-card hoverable">
+           <div class="skill-icon-wrapper">
+             <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+               <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+               <rect x="6" y="14" width="12" height="8"/>
+               <path d="M6 9V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v5"/>
+             </svg>
+           </div>
+           <div class="skill-name">Printing</div>
+         </div>
+         
+         <!-- Skill 6 -->
+         <div class="skill-card hoverable">
+           <div class="skill-icon-wrapper">
+             <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+               <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+               <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+               <line x1="12" y1="22.08" x2="12" y2="12"/>
+             </svg>
+           </div>
+           <div class="skill-name">Packaging</div>
+         </div>
+         
+         <!-- Skill 7 -->
+         <div class="skill-card hoverable">
+           <div class="skill-icon-wrapper">
+             <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+             </svg>
+           </div>
+           <div class="skill-name">Digital Creatives</div>
+         </div>
+         
+         <!-- Skill 8 -->
+         <div class="skill-card hoverable">
+           <div class="skill-icon-wrapper">
+             <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+               <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+               <polyline points="2 17 12 22 22 17"/>
+               <polyline points="2 12 12 17 22 12"/>
+             </svg>
+           </div>
+           <div class="skill-name">AI-Assisted Visual Design</div>
+         </div>
+       </div>
+     </div>
+   </section>
+ 
+   <!-- Services Section -->
+   <section id="services" class="services">
+     <div class="container">
+       <div class="section-header reveal">
+         <span class="section-subtitle">Services</span>
+         <h2 class="section-title text-gradient">What I Offer</h2>
+         <p class="section-desc">Premium design solutions crafted to elevate your brand presence online and offline.</p>
+       </div>
+       
+       <div class="services-grid reveal delay-100">
+         <!-- Service 1 -->
+         <div class="service-card hoverable">
+           <span class="service-num">01 / IDENTITY</span>
+           <h3 class="service-title">Brand Identity Design</h3>
+           <p class="service-desc">
+             Custom logo marks, full brand identity guidelines, design systems, and typography style sheets for unified corporate representation.
+           </p>
+         </div>
+         
+         <!-- Service 2 -->
+         <div class="service-card hoverable">
+           <span class="service-num">02 / SOCIAL</span>
+           <h3 class="service-title">Social Media Post Design</h3>
+           <p class="service-desc">
+             Eye-catching, structured social media templates, banners, and digital graphics tailored for Instagram, LinkedIn, and Facebook branding.
+           </p>
+         </div>
+         
+         <!-- Service 3 -->
+         <div class="service-card hoverable">
+           <span class="service-num">03 / WEB VISUALS</span>
+           <h3 class="service-title">Website Graphics</h3>
+           <p class="service-desc">
+             Stunning web hero visuals, interface design elements, project thumbnail mockups, and layout graphics optimized for seamless web display.
+           </p>
+         </div>
+         
+         <!-- Service 4 -->
+         <div class="service-card hoverable">
+           <span class="service-num">04 / WEB DEV</span>
+           <h3 class="service-title">Portfolio Website Design</h3>
+           <p class="service-desc">
+             Premium personal portfolios, digital landing pages, and interactive case study displays designed to captivate and present your work elegantly.
+           </p>
+         </div>
+         
+         <!-- Service 5 -->
+         <div class="service-card hoverable">
+           <span class="service-num">05 / RETAIL</span>
+           <h3 class="service-title">Packaging Design</h3>
+           <p class="service-desc">
+             Tactile label layouts, box packaging templates, realistic product mockups, and high-resolution print-ready packaging designs.
+           </p>
+         </div>
+         
+         <!-- Service 6 -->
+         <div class="service-card hoverable">
+           <span class="service-num">06 / PRINT</span>
+           <h3 class="service-title">Printing Material Design</h3>
+           <p class="service-desc">
+             Professional brochures, corporate flyers, business card systems, banners, and high-impact branding literature optimized for high-quality print.
+           </p>
+         </div>
+         
+         <!-- Service 7 -->
+         <div class="service-card hoverable">
+           <span class="service-num">07 / CAMPAIGN</span>
+           <h3 class="service-title">Creative Campaign Visuals</h3>
+           <p class="service-desc">
+             Cohesive advertising imagery, visual storytelling concepts, and full digital campaign designs that communicate brand value clearly.
+           </p>
+         </div>
+         
+         <!-- Service 8 -->
+         <div class="service-card hoverable">
+           <span class="service-num">08 / CONCEPT</span>
+           <h3 class="service-title">AI Visual Concepts</h3>
+           <p class="service-desc">
+             AI-assisted visual generation, creative art direction, composite concepts, and luxury digital assets built for state-of-the-art marketing.
+           </p>
+         </div>
+       </div>
+     </div>
+   </section>
+ 
+   <!-- Projects Section -->
+   <section id="projects" class="projects">
+     <!-- Floating 3D elements from assets folder -->
+     <img src="./3d-elements/purple-shape.png" alt="3D Purple Shape" class="floating-3d medium floating-projects-left">
+     <img src="./3d-elements/glass-cube.png" alt="3D Glass Cube" class="floating-3d medium floating-projects-right">
+     
+     <div class="container">
+       <div class="section-header reveal">
+         <span class="section-subtitle">Portfolio</span>
+         <h2 class="section-title text-gradient">Selected Projects</h2>
+         <p class="section-desc">Explore a gallery of curated marketing campaigns, visual identities, and graphic layout profiles.</p>
+       </div>
+       
+       <div class="projects-grid reveal delay-100">
+         <!-- Project 1: Exazar -->
+         <div class="project-card hoverable" data-id="exazar">
+           <div class="project-img-wrapper">
+             <img src="thumbnails/exazar.jpg" alt="Exazar Brand Visuals" class="project-img" loading="lazy">
+             <div class="project-hover-overlay">
+               <span class="project-view-btn">View Case Study</span>
+             </div>
+           </div>
+           <div class="project-info">
+             <div class="project-meta">
+               <span class="project-category">Jewelry Brand Visuals</span>
+             </div>
+             <h3 class="project-name">Exazar</h3>
+             <p class="project-desc">Premium jewelry campaign visuals, brand storytelling graphics, and luxury social media designs.</p>
+           </div>
+         </div>
+         
+         <!-- Project 2: Nabz -->
+         <div class="project-card hoverable" data-id="nabz">
+           <div class="project-img-wrapper">
+             <img src="thumbnails/nabz.jpg" alt="NABZ Awareness Campaign" class="project-img" loading="lazy">
+             <div class="project-hover-overlay">
+               <span class="project-view-btn">View Case Study</span>
+             </div>
+           </div>
+           <div class="project-info">
+             <div class="project-meta">
+               <span class="project-category">NABZ — Blood Donation App Campaign</span>
+             </div>
+             <h3 class="project-name">NABZ</h3>
+             <p class="project-desc">Blood donation and emergency response awareness visuals with clean healthcare-focused design.</p>
+           </div>
+         </div>
+         
+         <!-- Project 3: Energiko -->
+         <div class="project-card hoverable" data-id="energiko">
+           <div class="project-img-wrapper">
+             <img src="thumbnails/energiko.jpg" alt="Energiko Solar Campaign" class="project-img" loading="lazy">
+             <div class="project-hover-overlay">
+               <span class="project-view-btn">View Case Study</span>
+             </div>
+           </div>
+           <div class="project-info">
+             <div class="project-meta">
+               <span class="project-category">Energiko — Solar Energy Brand Creatives</span>
+             </div>
+             <h3 class="project-name">Energiko</h3>
+             <p class="project-desc">Solar inverter and energy solution campaign visuals with clean green technology branding.</p>
+           </div>
+         </div>
+         
+         <!-- Project 4: Maria Legal -->
+         <div class="project-card hoverable" data-id="maria-legal">
+           <div class="project-img-wrapper">
+             <img src="thumbnails/maria-legal.jpg" alt="Maria Legal & Corporate Solutions Branding" class="project-img" loading="lazy">
+             <div class="project-hover-overlay">
+               <span class="project-view-btn">View Case Study</span>
+             </div>
+           </div>
+           <div class="project-info">
+             <div class="project-meta">
+               <span class="project-category">Maria Legal — Legal & Corporate Branding</span>
+             </div>
+             <h3 class="project-name">Maria Legal & Corporate Solutions</h3>
+             <p class="project-desc">Professional legal service graphics, corporate visual identity, and premium social media designs.</p>
+           </div>
+         </div>
+         
+         <!-- Project 5: Ournex -->
+         <div class="project-card hoverable" data-id="ournex">
+           <div class="project-img-wrapper">
+             <img src="thumbnails/ournex.jpg" alt="Ournex Skincare Campaign" class="project-img" loading="lazy">
+             <div class="project-hover-overlay">
+               <span class="project-view-btn">View Case Study</span>
+             </div>
+           </div>
+           <div class="project-info">
+             <div class="project-meta">
+               <span class="project-category">Ournex — Skincare Product Campaign</span>
+             </div>
+             <h3 class="project-name">Ournex</h3>
+             <p class="project-desc">Beauty and skincare product visuals designed with soft premium product-focused branding.</p>
+           </div>
+         </div>
+         
+         <!-- Project 6: Wirasat -->
+         <div class="project-card hoverable" data-id="wirasat">
+           <div class="project-img-wrapper">
+             <img src="thumbnails/wirasat.jpg" alt="Wirasat Real Estate Marketing" class="project-img" loading="lazy">
+             <div class="project-hover-overlay">
+               <span class="project-view-btn">View Case Study</span>
+             </div>
+           </div>
+           <div class="project-info">
+             <div class="project-meta">
+               <span class="project-category">Wirasat — Real Estate & Lifestyle Campaigns</span>
+             </div>
+             <h3 class="project-name">Wirasat</h3>
+             <p class="project-desc">Real estate, resort, expo, and tourism promotional visuals with strong campaign presentation.</p>
+           </div>
+         </div>
+         
+         <!-- Project 7: ZeroDust -->
+         <div class="project-card hoverable" data-id="zerodust">
+           <div class="project-img-wrapper">
+             <img src="thumbnails/zerodust.jpg" alt="ZeroDust Cleaning Brand Profile" class="project-img" loading="lazy">
+             <div class="project-hover-overlay">
+               <span class="project-view-btn">View Case Study</span>
+             </div>
+           </div>
+           <div class="project-info">
+             <div class="project-meta">
+               <span class="project-category">ZeroDust — Cleaning Services Company Profile</span>
+             </div>
+             <h3 class="project-name">ZeroDust</h3>
+             <p class="project-desc">Company profile, service presentation, and professional cleaning brand visual design.</p>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+ 
+   <!-- Contact Section -->
+   <section id="contact" class="contact">
+     <!-- Floating 3D elements from assets folder -->
+     <img src="./3d-elements/glass-cube.png" alt="3D Glass Cube" class="floating-3d small floating-contact-decor">
+     
+     <div class="container">
+       <div class="contact-card glass-card reveal">
+         <h2 class="contact-title text-gradient">Have a project in mind?</h2>
+         <p class="contact-text">Let’s create something impactful together. Reach out via Behance, Instagram, or direct Email.</p>
+         
+         <div class="contact-grid">
+           <!-- Behance -->
+           <a href="https://www.behance.net/nooreman543" target="_blank" rel="noopener noreferrer" class="contact-item hoverable">
+             <div class="contact-icon-wrapper">
+               <img src="./icon/Behance-icon.png" alt="Behance" class="contact-icon-img">
+             </div>
+             <span class="contact-label">Behance</span>
+           </a>
+           
+           <!-- Instagram -->
+           <a href="https://www.instagram.com/emanartistryhub" target="_blank" rel="noopener noreferrer" class="contact-item hoverable">
+             <div class="contact-icon-wrapper">
+               <img src="./icon/instagram-icon.png" alt="Instagram" class="contact-icon-img">
+             </div>
+             <span class="contact-label">Instagram</span>
+           </a>
+           
+           <!-- Email -->
+           <a href="mailto:emanartistryhub@gmail.com" class="contact-item hoverable">
+             <div class="contact-icon-wrapper email-wrapper">
+               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" class="contact-svg-icon">
+                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                 <polyline points="22,6 12,13 2,6"/>
+               </svg>
+             </div>
+             <span class="contact-label">Email</span>
+           </a>
+         </div>
+       </div>
+     </div>
+   </section>
+ 
+   <!-- Footer -->
+   <footer>
+     <div class="container">
+       <div class="footer-content">
+         <div class="footer-info">
+           <a href="#home" class="footer-logo hoverable">NOOR EMAN<span>.</span></a>
+           <p class="footer-tagline">Creative portfolio for graphic design, branding, website visuals, and packaging.</p>
+         </div>
+         <ul class="footer-nav">
+           <li><a href="#home" class="hoverable">Home</a></li>
+           <li><a href="#about" class="hoverable">About</a></li>
+           <li><a href="#skills" class="hoverable">Skills</a></li>
+           <li><a href="#projects" class="hoverable">Projects</a></li>
+           <li><a href="#contact" class="hoverable">Contact</a></li>
+         </ul>
+       </div>
+       <div class="footer-bottom">
+         <div class="copyright">© 2026 Noor Eman. All rights reserved. Built for professional agency presentations.</div>
+       </div>
+     </div>
+   </footer>
+ 
+   <!-- PROJECT CAMPAIGN DETAIL MODAL -->
+   <div id="project-modal" class="modal-overlay" aria-modal="true" role="dialog">
+     <button class="modal-close-btn hoverable" aria-label="Close Project Detail">
+       <svg viewBox="0 0 24 24">
+         <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+       </svg>
+     </button>
+     <div class="project-modal-container">
+       <div class="project-detail-layout">
+         <!-- Text details -->
+         <div class="project-detail-info">
+           <span class="project-detail-cat">Category</span>
+           <h3 class="project-detail-title">Project Name</h3>
+           <p class="project-detail-desc">Project description goes here...</p>
+           
+           <div class="project-meta-grid">
+             <div>
+               <span class="meta-item-label">Role</span>
+               <span class="project-detail-role meta-item-value">Graphic Design, Visual Artist</span>
+             </div>
+             <div>
+               <span class="meta-item-label">Tools</span>
+               <div class="project-detail-tools meta-tags">
+                 <!-- Dynamically filled with tags -->
+               </div>
+             </div>
+           </div>
+           
+           <!-- View on Behance Link Button -->
+           <a href="https://www.behance.net/nooreman543" target="_blank" rel="noopener noreferrer" class="btn btn-primary modal-behance-btn hoverable" style="margin-top: 3.5rem; display: inline-flex; align-self: flex-start;">
+             View on Behance
+             <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left: 0.5rem;">
+               <path d="M5 12h14M12 5l7 7-7 7"/>
+             </svg>
+           </a>
+         </div>
+         
+         <!-- High-res campaign slide gallery -->
+         <div class="project-detail-gallery">
+           <!-- Dynamically filled with images -->
+         </div>
+       </div>
+     </div>
+   </div>
+ 
+   <script src="app.js"></script>
+ </body>
+</html>
