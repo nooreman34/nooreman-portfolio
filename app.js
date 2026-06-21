@@ -13,12 +13,12 @@ const PROJECTS_DATA = {
     description: "Premium jewelry campaign visuals, brand storytelling graphics, and luxury social media designs. This campaign visualizes timeless elegance, matching high-end jewelry with dark cinematic luxury accents.",
     thumbnail: "exazar-thumbnail.png",
     images: [
-      "project-images/exazar/Beyond ordinary.png",
-      "project-images/exazar/A Legacy Reawaken.png",
-      "project-images/exazar/A Silent Promise.png",
-      "project-images/exazar/More Than Jewelry.png",
-      "project-images/exazar/The Unseen Path.png",
-      "project-images/exazar/Wher Elegance hides.png"
+      "./A Legacy Reawaken.png",
+      "./A Silent Promise.png",
+      "./Beyond ordinary.png",
+      "./More Than Jewelry.png",
+      "./The Unseen Path.png",
+      "./Where Elegance hides.png"
     ]
   },
   nabz: {
@@ -29,12 +29,13 @@ const PROJECTS_DATA = {
     description: "Blood donation and emergency response awareness visuals with clean healthcare-focused design. Emphasizes modern clean layouts, typography, and high impact call-to-actions targeting younger donors.",
     thumbnail: "nabz-thumbnail.png",
     images: [
-      "project-images/nabz/post 1.png",
-      "project-images/nabz/post 2.png",
-      "project-images/nabz/post 3.png",
-      "project-images/nabz/post 5.png",
-      "project-images/nabz/post 6 copy.png",
-      "project-images/nabz/post 6.png"
+      "./post 1.png",
+      "./post 2.png",
+      "./post 3.png",
+      "./post 4.png",
+      "./post 5.png",
+      "./post 6.png",
+      "./post7.png"
     ]
   },
   energiko: {
@@ -45,13 +46,9 @@ const PROJECTS_DATA = {
     description: "Solar inverter and energy solution campaign visuals with clean technology branding. Uses bold green, yellow, and deep navy tones to signify renewable energy, efficiency, and residential cost-savings.",
     thumbnail: "energiko-thumbnail.png",
     images: [
-      "project-images/energiko/post 10.png",
-      "project-images/energiko/post 2.png",
-      "project-images/energiko/post 3.png",
-      "project-images/energiko/post 4.png",
-      "project-images/energiko/post 5.png",
-      "project-images/energiko/post 7.png",
-      "project-images/energiko/post 9.png"
+      "./energiko.jpg",
+      "./post 11.png",
+      "./post 14.png"
     ]
   },
   "maria-legal": {
@@ -62,13 +59,14 @@ const PROJECTS_DATA = {
     description: "Professional legal service graphics, corporate visual identity, and premium social media designs. This visual identity creates trust, authority, and professionalism through elegant layouts, serif font pairing, and deep blue/gold colors.",
     thumbnail: "maria-legal-thumbnail.png",
     images: [
-      "project-images/maria-legal/maria post 1 insta-13.jpg",
-      "project-images/maria-legal/maria-post-10-insta.jpg",
-      "project-images/maria-legal/maria-post-12-insta.jpg",
-      "project-images/maria-legal/maria-post-3-insta-13.jpg",
-      "project-images/maria-legal/maria-post-4-insta.jpg",
-      "project-images/maria-legal/maria-post-6-insta.jpg",
-      "project-images/maria-legal/maria-post-8-insta.jpg"
+      "./maria-legal.jpg",
+      "./maria post 1 insta-13.jpg",
+      "./maria-post-3-insta-13.jpg",
+      "./maria-post-4-instajpg",
+      "./maria-post-6-insta.jpg",
+      "./maria-post-8-insta.jpg",
+      "./maria-post-10-insta.jpg",
+      "./maria-post-12-insta.jpg"
     ]
   },
   ournex: {
@@ -79,13 +77,8 @@ const PROJECTS_DATA = {
     description: "Beauty and skincare product visuals designed with soft premium product-focused branding. Highlights clean backgrounds, minimalist grids, and glassmorphic card overlays mimicking clinical purity.",
     thumbnail: "Orunex thumbnail.png",
     images: [
-      "project-images/ournex/post 11.png",
-      "project-images/ournex/post 14.png",
-      "project-images/ournex/post 2.png",
-      "project-images/ournex/post 6 copy.png",
-      "project-images/ournex/post 9.png",
-      "project-images/ournex/post6 copy.png",
-      "project-images/ournex/post7.png"
+      "./ournex.jpg",
+      "./Orunex thumbnail.png"
     ]
   },
   wirasat: {
@@ -96,17 +89,18 @@ const PROJECTS_DATA = {
     description: "Real estate, resort, expo, and tourism promotional visuals with strong campaign presentation. Showcases high-contrast layouts, structural alignments, and rich content displays designed to generate leads.",
     thumbnail: "wirasat thumbnail.png",
     images: [
-      "project-images/wirasat/WIRASAT sialkot event post 1.jpg",
-      "project-images/wirasat/wirasat post 3.jpg",
-      "project-images/wirasat/wirasat post-05.jpg",
-      "project-images/wirasat/wirasat post-10.jpg",
-      "project-images/wirasat/wirasat post-13.jpg",
-      "project-images/wirasat/wirasat post-14.jpg",
-      "project-images/wirasat/wirasat post-16.jpg",
-      "project-images/wirasat/wirasat post-17.jpg",
-      "project-images/wirasat/wirasat post-21.jpg",
-      "project-images/wirasat/wirasat post-8.jpg",
-      "project-images/wirasat/youth international day post.jpg"
+      "./wirasat.jpg",
+      "./WIRASAT sialkot event post 1.jpg",
+      "./wirasat post 3.jpg",
+      "./wirasat post-05.jpg",
+      "./wirasat post-10.jpg",
+      "./wirasat post-13.jpg",
+      "./wirasat post-14.jpg",
+      "./wirasat post-16.jpg",
+      "./wirasat post-17.jpg",
+      "./wirasat post-21.jpg",
+      "./wirasat post-8.jpg",
+      "./youth international day post.jpg"
     ]
   },
   zerodust: {
@@ -117,16 +111,17 @@ const PROJECTS_DATA = {
     description: "Company profile, service presentation, and professional cleaning brand visual design. Visual layout emphasizes freshness, reliability, and structured corporate clarity with a beautiful presentation slide deck.",
     thumbnail: "zerodust thumbnail.png",
     images: [
-      "project-images/zerodust/company profile-01.jpg",
-      "project-images/zerodust/company profile-02.jpg",
-      "project-images/zerodust/company profile-03.jpg",
-      "project-images/zerodust/company profile-04.jpg",
-      "project-images/zerodust/company profile-05.jpg",
-      "project-images/zerodust/company profile-06.jpg",
-      "project-images/zerodust/company profile-07.jpg",
-      "project-images/zerodust/company profile-08.jpg",
-      "project-images/zerodust/company profile-09.jpg",
-      "project-images/zerodust/mockup.png"
+      "./zerodust.jpg",
+      "./company profile-01.jpg",
+      "./company profile-02.jpg",
+      "./company profile-03.jpg",
+      "./company profile-04.jpg",
+      "./company profile-05.jpg",
+      "./company profile-06.jpg",
+      "./company profile-07.jpg",
+      "./company profile-08.jpg",
+      "./company profile-09.jpg",
+      "./mockup.png"
     ]
   }
 };
