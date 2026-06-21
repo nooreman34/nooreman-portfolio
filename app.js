@@ -9,8 +9,8 @@ const PROJECTS_DATA = {
     title: "Exazar",
     category: "Jewelry Brand Visuals",
     role: "Graphic Design, Branding, Visual Design, Website Graphics",
-    tools: ["Photoshop", "Illustrator", "Canva", "AI Tools", "Web Design Tools"],
-    description: "Premium jewelry campaign visuals, brand storytelling graphics, and luxury social media designs. This campaign visualizes timeless elegance, matching high-end jewelry with dark cinematic luxury accents.",
+    tools: ["Photoshop", "Illustrator", "Canva", "AI Visual Direction"],
+    description: "Premium jewelry campaign visuals, brand storytelling graphics, and luxury social media designs.",
     thumbnail: "exazar-thumbnail.png",
     images: [
       "./A Legacy Reawaken.png",
@@ -23,12 +23,13 @@ const PROJECTS_DATA = {
   },
   nabz: {
     title: "NABZ",
-    category: "NABZ — Blood Donation App Campaign",
-    role: "Graphic Design, Branding, Visual Design, Website Graphics",
-    tools: ["Photoshop", "Illustrator", "Canva", "AI Tools", "Web Design Tools"],
-    description: "Blood donation and emergency response awareness visuals with clean healthcare-focused design. Emphasizes modern clean layouts, typography, and high impact call-to-actions targeting younger donors.",
+    category: "Blood Donation App Campaign",
+    role: "Social Media Design, Campaign Design, Awareness Visuals",
+    tools: ["Photoshop", "Canva", "AI Visual Direction"],
+    description: "Blood donation and emergency response awareness visuals with clean healthcare-focused design.",
     thumbnail: "nabz-thumbnail.png",
     images: [
+      "./nabz.jpg",
       "./post 1.png",
       "./post 2.png",
       "./post 3.png",
@@ -40,23 +41,24 @@ const PROJECTS_DATA = {
   },
   energiko: {
     title: "Energiko",
-    category: "Energiko — Solar Energy Brand Creatives",
-    role: "Graphic Design, Branding, Visual Design, Website Graphics",
-    tools: ["Photoshop", "Illustrator", "Canva", "AI Tools", "Web Design Tools"],
-    description: "Solar inverter and energy solution campaign visuals with clean technology branding. Uses bold green, yellow, and deep navy tones to signify renewable energy, efficiency, and residential cost-savings.",
+    category: "Solar Energy Brand Creatives",
+    role: "Social Media Design, Product Campaign Design, Brand Visuals",
+    tools: ["Photoshop", "Canva", "AI Visual Direction"],
+    description: "Solar inverter and energy solution campaign visuals with clean green technology branding.",
     thumbnail: "energiko-thumbnail.png",
     images: [
       "./energiko.jpg",
       "./post 11.png",
-      "./post 14.png"
+      "./post 14.png",
+      "./energiko-thumbnail.png"
     ]
   },
-  "maria-legal": {
+  maria: {
     title: "Maria Legal & Corporate Solutions",
-    category: "Maria Legal — Legal & Corporate Branding",
-    role: "Graphic Design, Branding, Visual Design, Website Graphics",
-    tools: ["Photoshop", "Illustrator", "Canva", "AI Tools", "Web Design Tools"],
-    description: "Professional legal service graphics, corporate visual identity, and premium social media designs. This visual identity creates trust, authority, and professionalism through elegant layouts, serif font pairing, and deep blue/gold colors.",
+    category: "Legal & Corporate Branding",
+    role: "Corporate Branding, Social Media Design, Legal Service Visuals",
+    tools: ["Photoshop", "Illustrator", "Canva"],
+    description: "Professional legal service graphics, corporate visual identity, and premium social media designs.",
     thumbnail: "maria-legal-thumbnail.png",
     images: [
       "./maria-legal.jpg",
@@ -71,10 +73,10 @@ const PROJECTS_DATA = {
   },
   ournex: {
     title: "Ournex",
-    category: "Ournex — Skincare Product Campaign",
-    role: "Graphic Design, Branding, Visual Design, Website Graphics",
-    tools: ["Photoshop", "Illustrator", "Canva", "AI Tools", "Web Design Tools"],
-    description: "Beauty and skincare product visuals designed with soft premium product-focused branding. Highlights clean backgrounds, minimalist grids, and glassmorphic card overlays mimicking clinical purity.",
+    category: "Skincare Product Campaign",
+    role: "Product Design, Social Media Design, Beauty Campaign Visuals",
+    tools: ["Photoshop", "Canva", "AI Product Visuals"],
+    description: "Beauty and skincare product visuals designed with soft premium product-focused branding.",
     thumbnail: "Orunex thumbnail.png",
     images: [
       "./ournex.jpg",
@@ -83,10 +85,10 @@ const PROJECTS_DATA = {
   },
   wirasat: {
     title: "Wirasat",
-    category: "Wirasat — Real Estate & Lifestyle Campaigns",
-    role: "Graphic Design, Branding, Visual Design, Website Graphics",
-    tools: ["Photoshop", "Illustrator", "Canva", "AI Tools", "Web Design Tools"],
-    description: "Real estate, resort, expo, and tourism promotional visuals with strong campaign presentation. Showcases high-contrast layouts, structural alignments, and rich content displays designed to generate leads.",
+    category: "Real Estate & Lifestyle Campaigns",
+    role: "Real Estate Campaign Design, Social Media Design, Promotional Visuals",
+    tools: ["Photoshop", "Canva", "AI Visual Direction"],
+    description: "Real estate, resort, expo, and tourism promotional visuals with strong campaign presentation.",
     thumbnail: "wirasat thumbnail.png",
     images: [
       "./wirasat.jpg",
@@ -105,10 +107,10 @@ const PROJECTS_DATA = {
   },
   zerodust: {
     title: "ZeroDust",
-    category: "ZeroDust — Cleaning Services Company Profile",
-    role: "Graphic Design, Branding, Visual Design, Website Graphics",
-    tools: ["Photoshop", "Illustrator", "Canva", "AI Tools", "Web Design Tools"],
-    description: "Company profile, service presentation, and professional cleaning brand visual design. Visual layout emphasizes freshness, reliability, and structured corporate clarity with a beautiful presentation slide deck.",
+    category: "Cleaning Services Company Profile",
+    role: "Company Profile Design, Brand Presentation, Service Visuals",
+    tools: ["Photoshop", "Canva", "Presentation Design"],
+    description: "Company profile, service presentation, and professional cleaning brand visual design.",
     thumbnail: "zerodust thumbnail.png",
     images: [
       "./zerodust.jpg",
