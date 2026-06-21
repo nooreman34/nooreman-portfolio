@@ -4,15 +4,15 @@
  */
 
 // Project Gallery Database
-const PROJECTS_DATA = {
-  exazar: {
+const projectData = [
+  {
+    id: "exazar",
     title: "Exazar",
     category: "Jewelry Brand Visuals",
+    description: "Premium jewelry campaign visuals, brand storytelling graphics, and luxury social media designs.",
     role: "Graphic Design, Branding, Visual Design, Website Graphics",
     tools: ["Photoshop", "Illustrator", "Canva", "AI Visual Direction"],
-    description: "Premium jewelry campaign visuals, brand storytelling graphics, and luxury social media designs.",
-    thumbnail: "exazar-thumbnail.png",
-    images: [
+    gallery: [
       "./A Legacy Reawaken.png",
       "./A Silent Promise.png",
       "./Beyond ordinary.png",
@@ -21,76 +21,81 @@ const PROJECTS_DATA = {
       "./Where Elegance hides.png"
     ]
   },
-  nabz: {
+  {
+    id: "nabz",
     title: "NABZ",
     category: "Blood Donation App Campaign",
+    description: "Blood donation and emergency response awareness visuals with clean healthcare-focused design.",
     role: "Social Media Design, Campaign Design, Awareness Visuals",
     tools: ["Photoshop", "Canva", "AI Visual Direction"],
-    description: "Blood donation and emergency response awareness visuals with clean healthcare-focused design.",
-    thumbnail: "nabz-thumbnail.png",
-    images: [
-      "./nabz.jpg",
-      "./post 1.png",
-      "./post 2.png",
-      "./post 3.png",
-      "./post 4.png",
-      "./post 5.png",
-      "./post 6.png",
-      "./post7.png"
+    gallery: [
+      "./project-images/nabz/blood.png",
+      "./project-images/nabz/click.png",
+      "./project-images/nabz/donor.png",
+      "./project-images/nabz/minute.png",
+      "./project-images/nabz/rawalpindi.png",
+      "./project-images/nabz/someone.png"
     ]
   },
-  energiko: {
+  {
+    id: "energiko",
     title: "Energiko",
     category: "Solar Energy Brand Creatives",
+    description: "Solar inverter and energy solution campaign visuals with clean green technology branding.",
     role: "Social Media Design, Product Campaign Design, Brand Visuals",
     tools: ["Photoshop", "Canva", "AI Visual Direction"],
-    description: "Solar inverter and energy solution campaign visuals with clean green technology branding.",
-    thumbnail: "energiko-thumbnail.png",
-    images: [
-      "./energiko.jpg",
-      "./post 11.png",
-      "./post 14.png",
-      "./energiko-thumbnail.png"
+    gallery: [
+      "./project-images/energiko/post 2.png",
+      "./project-images/energiko/post 3.png",
+      "./project-images/energiko/post 4.png",
+      "./project-images/energiko/post 5.png",
+      "./project-images/energiko/post 7.png",
+      "./project-images/energiko/post 9.png",
+      "./project-images/energiko/post 10.png"
     ]
   },
-  maria: {
+  {
+    id: "maria",
     title: "Maria Legal & Corporate Solutions",
     category: "Legal & Corporate Branding",
+    description: "Professional legal service graphics, corporate visual identity, and premium social media designs.",
     role: "Corporate Branding, Social Media Design, Legal Service Visuals",
     tools: ["Photoshop", "Illustrator", "Canva"],
-    description: "Professional legal service graphics, corporate visual identity, and premium social media designs.",
-    thumbnail: "maria-legal-thumbnail.png",
-    images: [
+    gallery: [
       "./maria-legal.jpg",
       "./maria post 1 insta-13.jpg",
       "./maria-post-3-insta-13.jpg",
-      "./maria-post-4-instajpg",
       "./maria-post-6-insta.jpg",
       "./maria-post-8-insta.jpg",
       "./maria-post-10-insta.jpg",
       "./maria-post-12-insta.jpg"
     ]
   },
-  ournex: {
+  {
+    id: "ournex",
     title: "Ournex",
     category: "Skincare Product Campaign",
+    description: "Beauty and skincare product visuals designed with soft premium product-focused branding.",
     role: "Product Design, Social Media Design, Beauty Campaign Visuals",
     tools: ["Photoshop", "Canva", "AI Product Visuals"],
-    description: "Beauty and skincare product visuals designed with soft premium product-focused branding.",
-    thumbnail: "Orunex thumbnail.png",
-    images: [
-      "./ournex.jpg",
-      "./Orunex thumbnail.png"
+    gallery: [
+      "./project-images/ournex/advanced.png",
+      "./project-images/ournex/aging.png",
+      "./project-images/ournex/dull.png",
+      "./project-images/ournex/good.png",
+      "./project-images/ournex/skincare.png",
+      "./project-images/ournex/targeted.png",
+      "./project-images/ournex/time.png"
     ]
   },
-  wirasat: {
+  {
+    id: "wirasat",
     title: "Wirasat",
     category: "Real Estate & Lifestyle Campaigns",
+    description: "Real estate, resort, expo, and tourism promotional visuals with strong campaign presentation.",
     role: "Real Estate Campaign Design, Social Media Design, Promotional Visuals",
     tools: ["Photoshop", "Canva", "AI Visual Direction"],
-    description: "Real estate, resort, expo, and tourism promotional visuals with strong campaign presentation.",
-    thumbnail: "wirasat thumbnail.png",
-    images: [
+    gallery: [
       "./wirasat.jpg",
       "./WIRASAT sialkot event post 1.jpg",
       "./wirasat post 3.jpg",
@@ -105,14 +110,14 @@ const PROJECTS_DATA = {
       "./youth international day post.jpg"
     ]
   },
-  zerodust: {
+  {
+    id: "zerodust",
     title: "ZeroDust",
     category: "Cleaning Services Company Profile",
+    description: "Company profile, service presentation, and professional cleaning brand visual design.",
     role: "Company Profile Design, Brand Presentation, Service Visuals",
     tools: ["Photoshop", "Canva", "Presentation Design"],
-    description: "Company profile, service presentation, and professional cleaning brand visual design.",
-    thumbnail: "zerodust thumbnail.png",
-    images: [
+    gallery: [
       "./zerodust.jpg",
       "./company profile-01.jpg",
       "./company profile-02.jpg",
@@ -126,23 +131,23 @@ const PROJECTS_DATA = {
       "./mockup.png"
     ]
   }
-};
+];
 
 function initApp() {
   // --- CUSTOM CURSOR ---
   const cursorDot = document.querySelector(".custom-cursor");
   const cursorGlow = document.querySelector(".custom-cursor-glow");
-  
+
   if (cursorDot && cursorGlow) {
     document.addEventListener("mousemove", (e) => {
       cursorDot.style.left = `${e.clientX}px`;
       cursorDot.style.top = `${e.clientY}px`;
-      
+
       // Delay glow follow effect
       cursorGlow.style.left = `${e.clientX}px`;
       cursorGlow.style.top = `${e.clientY}px`;
     });
-    
+
     // Add hover triggers
     const hoverables = document.querySelectorAll("a, button, .project-card, .hero-media-card, .modal-close-btn");
     hoverables.forEach(item => {
@@ -150,7 +155,7 @@ function initApp() {
         cursorDot.style.width = "12px";
         cursorDot.style.height = "12px";
         cursorDot.style.backgroundColor = "var(--accent-red)";
-        
+
         cursorGlow.style.width = "60px";
         cursorGlow.style.height = "60px";
         cursorGlow.style.backgroundColor = "rgba(230, 0, 37, 0.25)";
@@ -160,7 +165,7 @@ function initApp() {
         cursorDot.style.width = "8px";
         cursorDot.style.height = "8px";
         cursorDot.style.backgroundColor = "var(--text-white)";
-        
+
         cursorGlow.style.width = "40px";
         cursorGlow.style.height = "40px";
         cursorGlow.style.backgroundColor = "rgba(192, 0, 104, 0.15)";
@@ -262,7 +267,7 @@ function initApp() {
         // Fallback to muted autoplay
         heroVideo.muted = true;
         heroVideo.volume = 0;
-        heroVideo.play().catch(() => {});
+        heroVideo.play().catch(() => { });
       });
 
     // Option A: Enable sound button listener
@@ -280,7 +285,7 @@ function initApp() {
             // Fallback: keep button visible
             heroVideo.muted = true;
             heroVideo.volume = 0;
-            heroVideo.play().catch(() => {});
+            heroVideo.play().catch(() => { });
           });
       });
     }
@@ -297,7 +302,7 @@ function initApp() {
                 heroVideo.muted = true;
                 heroVideo.volume = 0;
               }
-              heroVideo.play().catch(() => {});
+              heroVideo.play().catch(() => { });
             } else {
               heroVideo.pause();
             }
@@ -324,7 +329,7 @@ function initApp() {
               heroVideo.muted = true;
               heroVideo.volume = 0;
             }
-            heroVideo.play().catch(() => {});
+            heroVideo.play().catch(() => { });
           }
         }
       }
@@ -332,51 +337,58 @@ function initApp() {
   }
 
   // --- PROJECT DETAIL MODAL ---
-  const projectCards = document.querySelectorAll(".project-card");
   const projectModal = document.getElementById("project-modal");
   const projectCloseBtn = projectModal ? projectModal.querySelector(".modal-close-btn") : null;
 
   function openProjectModal(projectId) {
-    const data = PROJECTS_DATA[projectId];
-    if (!data || !projectModal) return;
+    const project = projectData.find(item => item.id === projectId);
+    if (!project) {
+      console.warn(`Project not found for ID: ${projectId}`);
+      return;
+    }
+    if (!projectModal) return;
 
     // Populate modal fields
-    projectModal.querySelector(".project-detail-cat").textContent = data.category;
-    projectModal.querySelector(".project-detail-title").textContent = data.title;
-    projectModal.querySelector(".project-detail-desc").textContent = data.description;
-    projectModal.querySelector(".project-detail-role").textContent = data.role;
-    
+    projectModal.querySelector(".project-detail-cat").textContent = project.category;
+    projectModal.querySelector(".project-detail-title").textContent = project.title;
+    projectModal.querySelector(".project-detail-desc").textContent = project.description;
+    projectModal.querySelector(".project-detail-role").textContent = project.role;
+
     // Behance button link
     const behanceBtn = projectModal.querySelector(".modal-behance-btn");
     if (behanceBtn) {
-      behanceBtn.href = data.behanceUrl || "https://www.behance.net/nooreman543";
+      behanceBtn.href = project.behanceUrl || "https://www.behance.net/nooreman543";
     }
-    
+
     // Tools list
     const toolsContainer = projectModal.querySelector(".project-detail-tools");
-    toolsContainer.innerHTML = "";
-    data.tools.forEach(tool => {
-      const tag = document.createElement("span");
-      tag.className = "tag";
-      tag.textContent = tool;
-      toolsContainer.appendChild(tag);
-    });
+    if (toolsContainer) {
+      toolsContainer.innerHTML = "";
+      project.tools.forEach(tool => {
+        const tag = document.createElement("span");
+        tag.className = "tag";
+        tag.textContent = tool;
+        toolsContainer.appendChild(tag);
+      });
+    }
 
     // Gallery images
     const galleryContainer = projectModal.querySelector(".project-detail-gallery");
-    galleryContainer.innerHTML = "";
-    data.images.forEach(imgSrc => {
-      const galleryItem = document.createElement("div");
-      galleryItem.className = "gallery-item";
-      
-      const img = document.createElement("img");
-      img.src = imgSrc;
-      img.alt = `${data.title} campaign screen`;
-      img.loading = "lazy";
-      
-      galleryItem.appendChild(img);
-      galleryContainer.appendChild(galleryItem);
-    });
+    if (galleryContainer) {
+      galleryContainer.innerHTML = "";
+      project.gallery.forEach(imgSrc => {
+        const galleryItem = document.createElement("div");
+        galleryItem.className = "gallery-item";
+
+        const img = document.createElement("img");
+        img.src = imgSrc;
+        img.alt = `${project.title} campaign screen`;
+        img.loading = "lazy";
+
+        galleryItem.appendChild(img);
+        galleryContainer.appendChild(galleryItem);
+      });
+    }
 
     // Activate modal
     projectModal.classList.add("active");
@@ -390,10 +402,25 @@ function initApp() {
     }
   }
 
+  // Bind click event to "View Case Study" buttons
+  const projectButtons = document.querySelectorAll(".project-view-btn");
+  projectButtons.forEach(button => {
+    button.addEventListener("click", (e) => {
+      e.stopPropagation(); // Prevent bubbling up to the card if there's any other handler
+      const projectId = button.dataset.project || button.getAttribute("data-project");
+      openProjectModal(projectId);
+    });
+  });
+
+  // Also allow clicking the project card to open it using the button's data-project
+  const projectCards = document.querySelectorAll(".project-card");
   projectCards.forEach(card => {
     card.addEventListener("click", () => {
-      const id = card.getAttribute("data-id");
-      openProjectModal(id);
+      const button = card.querySelector(".project-view-btn");
+      if (button) {
+        const projectId = button.dataset.project || button.getAttribute("data-project");
+        openProjectModal(projectId);
+      }
     });
   });
 
@@ -417,3 +444,216 @@ if (document.readyState === "loading") {
 } else {
   initApp();
 }
+/* =========================================================
+   FINAL FORCE FIX - PROJECT CASE STUDY MODAL
+   This intercepts project clicks before old mixed logic runs.
+   ========================================================= */
+
+const finalProjectData = [
+  {
+    id: "exazar",
+    title: "Exazar",
+    category: "Jewelry Brand Visuals",
+    description: "Premium jewelry campaign visuals, brand storytelling graphics, and luxury social media designs. This campaign visualizes timeless elegance, matching high-end jewelry with dark cinematic luxury accents.",
+    role: "Graphic Design, Branding, Visual Design, Website Graphics",
+    tools: ["Photoshop", "Illustrator", "Canva", "AI Visual Direction"],
+    gallery: [
+      "./A Legacy Reawaken.png",
+      "./A Silent Promise.png",
+      "./Beyond ordinary.png",
+      "./More Than Jewelry.png",
+      "./The Unseen Path.png",
+      "./Where Elegance hides.png"
+    ]
+  },
+  {
+    id: "nabz",
+    title: "NABZ",
+    category: "Blood Donation App Campaign",
+    description: "Blood donation and emergency response awareness visuals with clean healthcare-focused design, urgency-based messaging, and social impact presentation.",
+    role: "Social Media Design, Campaign Design, Awareness Visuals",
+    tools: ["Photoshop", "Canva", "AI Visual Direction"],
+    gallery: [
+      "./nabz.jpg",
+      "./post 1.png",
+      "./post 2.png",
+      "./post 3.png",
+      "./post 4.png",
+      "./post 5.png",
+      "./post 6.png",
+      "./post7.png"
+    ]
+  },
+  {
+    id: "energiko",
+    title: "Energiko",
+    category: "Solar Energy Brand Creatives",
+    description: "Solar inverter and energy solution campaign visuals with clean green technology branding, product-focused layouts, and energy-saving communication.",
+    role: "Social Media Design, Product Campaign Design, Brand Visuals",
+    tools: ["Photoshop", "Canva", "AI Visual Direction"],
+    gallery: [
+      "./energiko.jpg",
+      "./energiko-thumbnail.png",
+      "./post 11.png",
+      "./post 14.png"
+    ]
+  },
+  {
+    id: "maria",
+    title: "Maria Legal & Corporate Solutions",
+    category: "Legal & Corporate Branding",
+    description: "Professional legal service graphics, corporate visual identity, and premium social media designs for business, legal, and compliance communication.",
+    role: "Corporate Branding, Social Media Design, Legal Service Visuals",
+    tools: ["Photoshop", "Illustrator", "Canva"],
+    gallery: [
+      "./maria-legal.jpg",
+      "./maria post 1 insta-13.jpg",
+      "./maria-post-3-insta-13.jpg",
+      "./maria-post-6-insta.jpg",
+      "./maria-post-8-insta.jpg",
+      "./maria-post-10-insta.jpg",
+      "./maria-post-12-insta.jpg"
+    ]
+  },
+  {
+    id: "ournex",
+    title: "Ournex",
+    category: "Skincare Product Campaign",
+    description: "Beauty and skincare product visuals designed with soft premium product-focused branding, clean product presentation, and feminine luxury styling.",
+    role: "Product Design, Social Media Design, Beauty Campaign Visuals",
+    tools: ["Photoshop", "Canva", "AI Product Visuals"],
+    gallery: [
+      "./ournex.jpg",
+      "./Orunex thumbnail.png"
+    ]
+  },
+  {
+    id: "wirasat",
+    title: "Wirasat",
+    category: "Real Estate & Lifestyle Campaigns",
+    description: "Real estate, resort, expo, and tourism promotional visuals with strong campaign presentation, premium location-based storytelling, and lifestyle-focused design.",
+    role: "Real Estate Campaign Design, Social Media Design, Promotional Visuals",
+    tools: ["Photoshop", "Canva", "AI Visual Direction"],
+    gallery: [
+      "./wirasat.jpg",
+      "./WIRASAT sialkot event post 1.jpg",
+      "./wirasat post 3.jpg",
+      "./wirasat post-05.jpg",
+      "./wirasat post-10.jpg",
+      "./wirasat post-13.jpg",
+      "./wirasat post-14.jpg",
+      "./wirasat post-16.jpg",
+      "./wirasat post-17.jpg",
+      "./wirasat post-21.jpg",
+      "./wirasat post-8.jpg",
+      "./youth international day post.jpg"
+    ]
+  },
+  {
+    id: "zerodust",
+    title: "ZeroDust",
+    category: "Cleaning Services Company Profile",
+    description: "Company profile, service presentation, and professional cleaning brand visual design with a clean blue-green corporate identity.",
+    role: "Company Profile Design, Brand Presentation, Service Visuals",
+    tools: ["Photoshop", "Canva", "Presentation Design"],
+    gallery: [
+      "./zerodust.jpg",
+      "./company profile-01.jpg",
+      "./company profile-02.jpg",
+      "./company profile-03.jpg",
+      "./company profile-04.jpg",
+      "./company profile-05.jpg",
+      "./company profile-06.jpg",
+      "./company profile-07.jpg",
+      "./company profile-08.jpg",
+      "./company profile-09.jpg",
+      "./mockup.png"
+    ]
+  }
+];
+
+function openFinalProjectModal(projectId) {
+  const project = finalProjectData.find(item => item.id === projectId);
+
+  if (!project) {
+    console.warn("Project not found:", projectId);
+    return;
+  }
+
+  let modal = document.querySelector("#projectModal") || document.querySelector(".project-modal");
+
+  if (!modal) {
+    modal = document.createElement("div");
+    modal.id = "projectModal";
+    modal.className = "project-modal";
+    document.body.appendChild(modal);
+  }
+
+  modal.innerHTML = `
+    <div class="project-modal-overlay"></div>
+
+    <div class="project-modal-content">
+      <button class="project-modal-close" type="button" aria-label="Close Project">×</button>
+
+      <div class="project-modal-layout">
+        <div class="project-modal-info">
+          <p class="project-modal-category">${project.category}</p>
+          <h2 class="project-modal-title">${project.title}</h2>
+          <p class="project-modal-description">${project.description}</p>
+
+          <div class="project-modal-meta">
+            <div>
+              <h4>Role</h4>
+              <p>${project.role}</p>
+            </div>
+
+            <div>
+              <h4>Tools</h4>
+              <div class="project-modal-tools">
+                ${project.tools.map(tool => `<span>${tool}</span>`).join("")}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-modal-gallery">
+          ${project.gallery.map((image, index) => `
+            <img src="${image}" alt="${project.title} project image ${index + 1}" loading="lazy">
+          `).join("")}
+        </div>
+      </div>
+    </div>
+  `;
+
+  modal.classList.add("active");
+  document.body.style.overflow = "hidden";
+
+  const closeBtn = modal.querySelector(".project-modal-close");
+  const overlay = modal.querySelector(".project-modal-overlay");
+
+  function closeFinalProjectModal() {
+    modal.classList.remove("active");
+    document.body.style.overflow = "auto";
+  }
+
+  closeBtn.addEventListener("click", closeFinalProjectModal);
+  overlay.addEventListener("click", closeFinalProjectModal);
+}
+
+/* Capture phase: stops old mixed modal click code before it runs */
+document.addEventListener(
+  "click",
+  function (event) {
+    const button = event.target.closest("[data-project]");
+
+    if (!button) return;
+
+    event.preventDefault();
+    event.stopPropagation();
+    event.stopImmediatePropagation();
+
+    const projectId = button.getAttribute("data-project");
+    openFinalProjectModal(projectId);
+  },
+  true
+);
